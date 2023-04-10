@@ -1,0 +1,158 @@
+*{
+    font-family: Garamond;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: lightgray;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.Wrap {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.Wrap .left {
+    width: 33%;
+   background-color: dimgrey;
+}
+
+.Wrap .left .left_image img{
+    width: 100%;
+    display: block;
+}
+
+.Wrap .CV_title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.Wrap .left .CV_info {
+    color: darkgray;
+}
+
+.Wrap .left .CV_bottom {
+    padding: 20px 30px;
+}
+
+.Wrap .CV_item {
+    padding: 20px 0;
+    border-bottom: 1px solid lightblue;
+}
+
+.Wrap .CV_item:last-child{
+	border-bottom: 0;
+}
+
+.Wrap .left .CV_contact .CV_info:last-child{
+	 margin-top: 10px;
+}
+
+.Wrap .left .CV_contact .CV_subtitle{
+	color: white;
+	margin-bottom: 2px;
+}
+
+.Wrap .left .CV_skills .CV_info .skills_list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.Wrap .left .CV_skills .CV_info .skills_list .skills_bar p{
+	position: relative;
+	width: 117px;
+    height: 20px;
+    background: white;
+}
+
+.Wrap .left .CV_skills .CV_info .skills_list .skills_bar p span{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: lightblue;
+	width: 100%;
+	height: 100%;
+}
+
+.Wrap .right{
+	width: 65%;
+	padding: 20px 40px;
+	color: black;
+}
+
+.Wrap .right .CV_namerole .name{
+	color: black;
+	font-size: 32px;
+}
+
+.Wrap .right .CV_namerole .role{
+	font-size: 17px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.Wrap .right .CV_item .CV_title{
+	color: black;
+}
+
+.Wrap .right .CV_data{
+	display: flex;
+}
+
+.Wrap .right .CV_data .year{
+	padding-right: 35px;
+	width: 115px;
+	position: relative;
+}
+
+.Wrap .right .CV_data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+
+.Wrap .right .CV_data .year:before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+.Wrap .right .CV_data .year:after{
+	content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #0175b2;
+}
+
+.Wrap .right .CV_data:last-child .year:after{
+	display: none;
+}
+
+.Wrap .right .CV_hobbies .CV_info{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
