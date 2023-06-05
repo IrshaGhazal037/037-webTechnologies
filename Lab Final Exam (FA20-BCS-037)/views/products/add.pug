@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+    br
+    br
+    h1 Add New Record
+    form(action="/products/add",method="post")
+        .form-group
+            label(for="diastolic") Diastolic
+            input#diastolic(type="text", class="form-control", name="DIASTOLIC")
+        .form-group
+            label(for="systolic") Systolic
+            input#systolic(type="text", class="form-control", name="SYSTOLIC")
+        .form-group
+            label(for="time") Time
+            input#time(type="text", class="form-control", name="time")
+        input(type="submit", class="btn btn-info")

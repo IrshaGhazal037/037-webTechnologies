@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    h1 Edit Product
+    form(action="/products/edit/"+product._id,method="post")
+        .form-group
+            label(for="diastolic") Diastolic
+            input#diastolic(type="text", class="form-control", name="DIASTOLIC", value=product.DIASTOLIC)
+        .form-group
+            label(for="systolic") Systolic
+             input#systolic(type="text", class="form-control", name="SYSTOLIC", value=product.SYSTOLIC)
+        .form-group
+            label(for="time") Time
+            input#time(type="text", class="form-control", name="time", value=product.time)
+        input(type="submit", class="btn btn-info")

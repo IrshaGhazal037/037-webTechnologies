@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Nestle Pakistan</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -37,7 +37,195 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <h1>This is my first Bootstrap</h1>
+    <!-- <h1>This is my first Bootstrap</h1> -->
+
+    <!-- Logo With Functionality -->
+    <!-- <div class="logo">Lexxiv</div> -->
+    <div class="logo">
+      <img src="Images/logo.PNG" alt="Logo" />
+      <h1>Good food, Good Life</h1>
+    </div>
+
+    <script>
+      const logo = document.querySelector(".logo");
+      logo.onclick = function () {
+        alert("My roll number is FA20-BCS-037");
+      };
+    </script>
+
+    <!-- Nav Bar -->
+    <nav>
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+
+      <div class="nav-items">
+        <a href="Home.html">About Us</a>
+        <a href="Service.html">Our Stories</a>
+        <a href="Service.html">Our Impact</a>
+        <a href="Service.html">Brands</a>
+        <a href="Service.html">Ask Nestle</a>
+      </div>
+
+      <!-- <div class="nav-items_right">
+        <a href="Home.html">About Us</a>
+        <a href="Service.html">Our Stories</a>
+        <a href="Service.html">Our Impact</a>
+      </div> -->
+
+      <div class="search-icon">
+        <i class="fa-regular fa-magnifying-glass"></i>
+      </div>
+      <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
+      <form action="#">
+        <input
+          type="search"
+          class="search-data"
+          placeholder="Search"
+          required
+        />
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+    </nav>
+
+    <!-- Slide Show -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/brv-banner-new.jpg" style="width: 100%" />
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+          provident.
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/hotbot-banner-n.jpg" style="width: 100%" />
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+          provident.
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Images/virtual-showroom.jpg" style="width: 100%" />
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+          provident.
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- 3 Images -->
+    <center>
+      <div style="margin-top: 40px" class="row">
+        <div class="column">
+          <div class="card">
+            <img src="Images/Generation.png" alt="Jane" style="width: 100%" />
+            &nbsp;
+            <div class="container">
+              <h2 style="color: red; margin-top: 1px; font-weight: lighter">
+                Creating Shared Value
+              </h2>
+              <p style="margin-top: 20px">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
+              <p>
+                <button style="margin-top: 20px" class="button">
+                  READ MORE
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="Images/NeedToTalk.png" alt="Mike" style="width: 100%" />
+            &nbsp;
+            <div class="container">
+              <h2 style="color: green; margin-top: 1px; font-weight: lighter">
+                Ask Nestle
+              </h2>
+              <p style="margin-top: 20px">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
+              <p>
+                <button style="margin-top: 20px" class="button">
+                  READ MORE
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="Images/careers.png" alt="John" style="width: 100%" />
+            &nbsp;
+            <div class="container">
+              <h2 style="color: blue; margin-top: 1px; font-weight: lighter">
+                Apply Online
+              </h2>
+              <p style="margin-top: 20px">
+                Some text that describes me lorem ipsum ipsum lorem.
+              </p>
+              <p>
+                <button style="margin-top: 20px" class="button">
+                  READ MORE
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <!-- Footer -->
+    <footer
+      style="margin-top: 40px; background-color: rgb(236, 122, 141)"
+      class="footer-distributed"
+    >
+      <div class="footer-left">
+        <h3>Latest News</h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+        </p>
+
+        <p class="footer-company-name">Nestle Pakistan © 2023</p>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span style="color: white">March 14, 2023</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span style="color: white">March 20, 2023</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
